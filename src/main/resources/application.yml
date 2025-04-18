@@ -1,1 +1,17 @@
-git cspring.application.name=movie-ticket-booking-system
+spring:
+  application:
+    name: movie-ticket-booking-system-api
+
+  #DATASOURCE CONFIGURATION
+  datasource:
+    url: jdbc:mysql://localhost:3306/movie-ticket-booking-system?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        formate_sql: true
+
